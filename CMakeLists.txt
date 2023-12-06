@@ -18,7 +18,8 @@ target_sources(${PROJECT_NAME}_LIB
             FILES
                 "src/day1.cpp"
                 "src/day2.cpp"
-                "src/day3.cpp")
+                "src/day3.cpp"
+                "src/day4.cpp")
 
 target_compile_features(${PROJECT_NAME}_LIB PUBLIC cxx_std_20)
 
@@ -50,7 +51,8 @@ target_sources(${PROJECT_NAME}_TEST
    PRIVATE
         test/test_day1.cpp
         test/test_day2.cpp
-        test/test_day3.cpp)
+        test/test_day3.cpp
+        test/test_day4.cpp)
 
 target_link_libraries(${PROJECT_NAME}_TEST
     PRIVATE
