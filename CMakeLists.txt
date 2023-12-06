@@ -16,7 +16,8 @@ target_sources(${PROJECT_NAME}_LIB
             BASE_DIRS
                 "${CMAKE_CURRENT_SORUCE_DIR}"
             FILES
-                "src/day1.cpp")
+                "src/day1.cpp"
+                "src/day2.cpp")
 
 target_compile_features(${PROJECT_NAME}_LIB PUBLIC cxx_std_20)
 
@@ -46,7 +47,9 @@ FetchContent_MakeAvailable(googletest)
 add_executable(${PROJECT_NAME}_TEST)
 target_sources(${PROJECT_NAME}_TEST
    PRIVATE
-        test/test_day1.cpp)
+        test/test_day1.cpp
+        test/test_day2.cpp)
+
 target_link_libraries(${PROJECT_NAME}_TEST
     PRIVATE
         gtest_main gmock
